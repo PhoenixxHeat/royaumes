@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Royaumes des fractions</h1>
+        <h3>Par Liam B. et Trent T.</h3>
+        <h2>Entrez un numéro entre 1 et 45</h2>
+        <form id="numberForm">
+            <input type="number" id="numberInput" min="1" max="45">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="response"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
